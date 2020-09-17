@@ -6,7 +6,7 @@ const AllCoffeePage = (props) => {
     const allCoffees = props.pageContext.allCoffees;
     return(
         <Layout>
-            {allCoffees.map(coffee => {
+            {allCoffees && allCoffees.map(coffee => {
                 return (
                     <CoffeeCard key={coffee.id} coffee={coffee}></CoffeeCard>
                 )

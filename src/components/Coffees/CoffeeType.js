@@ -4,9 +4,8 @@ import { Link } from "gatsby"
 
 const CoffeeType = props => {
   const coffeetype = props.coffeetype
-  const style = { textAlign: `center` }
   return (
-    <div key={coffeetype.id} style={style}>
+    <div key={coffeetype.id}>
       <Link to={`/${coffeetype.slug}`}>
         <h2>{coffeetype.coffeeType}</h2>
       </Link>

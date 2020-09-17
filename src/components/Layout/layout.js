@@ -2,7 +2,8 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "../Header/header"
-import "./layout.css"
+// import "./layout.css"
+import "../../scss/global.scss"
 
 const Layout = (props) => {
   const data = useStaticQuery(graphql`
